@@ -1,0 +1,13 @@
+{
+  "name": "구구단 탐험대",
+  "short_name": "구구단탐험대",
+  "description": "그림으로 이해하고 칭찬으로 자라는 구구단 학습 앱",
+  "start_url": "/",
+  "display": "standalone",
+  "lang": "ko",
+  "background_color": "#fff8ec",
+  "theme_color": "#5b4bdb",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

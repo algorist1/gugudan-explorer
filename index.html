@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>구구단 탐험대</title>
+  <meta name="description" content="그림으로 이해하고, 칭찬으로 자라는 구구단 학습 앱 - 구구단 탐험대">
+  <meta name="theme-color" content="#5b4bdb">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 색종이 효과용 캔버스 -->
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <button class="brand" data-go="map" aria-label="탐험 지도로 가기">
+      <span class="brand-icon" aria-hidden="true">🧭</span>
+      <span class="brand-text">구구단 탐험대</span>
+    </button>
+    <div class="status">
+      <span class="pill" id="starTotal" title="모은 별">⭐ 0</span>
+      <span class="pill" id="streakPill" title="연속 정답">🔥 0</span>
+      <span class="pill hide-sm" id="badgePill" title="모은 배지">🏅 0</span>
+      <button class="icon-btn" id="soundBtn" aria-label="소리 끄기">🔊</button>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="메뉴">
+    <button data-go="map"><span aria-hidden="true">🗺️</span> 탐험 지도</button>
+    <button data-go="learn"><span aria-hidden="true">📖</span> 배우기</button>
+    <button data-go="quiz"><span aria-hidden="true">🎯</span> 도전</button>
+    <button data-go="table"><span aria-hidden="true">🔢</span> 구구단 표</button>
+    <button data-go="badges"><span aria-hidden="true">🏅</span> 배지</button>
+  </nav>
+
+  <main id="app">
+    <section id="view-map" class="view"></section>
+    <section id="view-learn" class="view" hidden></section>
+    <section id="view-quiz" class="view" hidden></section>
+    <section id="view-table" class="view" hidden></section>
+    <section id="view-badges" class="view" hidden></section>
+  </main>
+
+  <footer class="foot">구구단 탐험대 · 그림으로 이해하고 칭찬으로 자라요 🌱</footer>
+
+  <div id="toasts" role="status" aria-live="polite"></div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
