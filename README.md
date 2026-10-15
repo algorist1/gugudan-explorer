@@ -33,7 +33,7 @@ gugudan-explorer/
 
 ## Vercel 배포 방법
 
-### 방법 A. GitHub 연동 (추천 — 수정 후 push하면 자동 재배포)
+### 방법 A. GitHub 연동 (추천 — 수정 후 Commit하면 자동 재배포. 내 컴퓨터에서 git으로 작업할 때는 Commit 후 Push)
 1. GitHub에 새 저장소를 만들고 이 폴더의 파일을 모두 올립니다. (`index.html`이 저장소 최상위에 오도록)
 2. https://vercel.com/new 에서 해당 저장소를 Import 합니다.
 3. Framework Preset은 **Other**, Build Command와 Output Directory는 비워 둔 채 **Deploy**를 누릅니다.
